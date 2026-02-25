@@ -1,0 +1,17 @@
+name: jmeter-load
+on:
+  workflow_dispatch:
+jobs:
+  run-jmeter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run JMeter (Docker)
+        run: |
+          docker run --rm -v "${{ github.workspace }}":/test -w /test justb4/jmeter:5.5 \
+            -n -t jmeter/simple-http-test.jmx -l results.jtl -e -o /test/jmeter-report
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-report
+          path: jmeter-report
