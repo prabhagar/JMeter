@@ -1,0 +1,5 @@
+path,expected_code
+/,200
+/more-information,404
+/contact,404
+/does-not-exist,404

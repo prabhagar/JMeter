@@ -1,0 +1,9 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1772348691789,446,HTTP Request - GET /,200,OK,Thread Group 1-1,text,true,,837,109,1,1,https://example.com/,442,0,334
+1772348693481,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,296,0,1,1,null,0,0,0
+1772348694226,315,HTTP Request - GET /,404,Not Found,Thread Group 1-1,text,false,,760,125,1,1,https://example.com/more-information,314,0,203
+1772348695224,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,313,0,1,1,null,0,0,0
+1772348696064,298,HTTP Request - GET /,404,Not Found,Thread Group 1-1,text,false,,755,116,1,1,https://example.com/contact,297,0,194
+1772348697056,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,304,0,1,1,null,0,0,0
+1772348697572,305,HTTP Request - GET /,404,Not Found,Thread Group 1-1,text,false,,755,123,1,1,https://example.com/does-not-exist,304,0,191
+1772348698856,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,311,0,1,1,null,0,0,0
